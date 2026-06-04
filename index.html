@@ -10,71 +10,131 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#111;
+background:#000;
 color:white;
-text-align:center;
 }
 
-.hero{
+header{
+text-align:center;
 padding:40px 20px;
+background:linear-gradient(to bottom,#000,#111);
 }
 
 .logo{
-width:220px;
+width:280px;
+max-width:90%;
 border-radius:20px;
-margin-bottom:20px;
 }
 
 h1{
-font-size:42px;
-color:#ff7a00;
+font-size:55px;
+color:#ff7b00;
+margin-top:20px;
 }
 
 .tagline{
-font-size:20px;
-margin-top:10px;
+font-size:26px;
 color:#ddd;
-}
-
-.section{
-padding:40px 20px;
-}
-
-.card{
-background:#1c1c1c;
-padding:25px;
-margin:15px auto;
-border-radius:15px;
-max-width:700px;
+margin-top:10px;
 }
 
 .btn{
 display:inline-block;
-padding:15px 30px;
-background:#ff7a00;
+margin-top:25px;
+padding:15px 35px;
+background:#ff7b00;
 color:white;
 text-decoration:none;
-border-radius:10px;
+font-size:20px;
 font-weight:bold;
-margin-top:15px;
+border-radius:10px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff9500;
+transform:scale(1.05);
+}
+
+section{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#ff7b00;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 15px rgba(255,123,0,.2);
+}
+
+.card h3{
+color:#ff7b00;
+margin-bottom:15px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
 }
 
 footer{
+background:#111;
+text-align:center;
 padding:30px;
-color:#aaa;
+margin-top:40px;
+}
+
+.social a{
+color:#ff7b00;
+margin:0 15px;
+font-size:20px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+h1{
+font-size:42px;
+}
+
+.tagline{
+font-size:20px;
+}
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
+<header>
 
-<img src="logo.jpg.png" alt="Dogra Run Club Logo" style="width:300px;max-width:90%;">
+<img src="logo.jpg.png" alt="Dogra Run Club Logo" class="logo">
 
 <h1>DOGRA RUN CLUB</h1>
 
@@ -82,65 +142,125 @@ color:#aaa;
 Run Together. Stronger Together.
 </p>
 
-<a class="btn" href="https://chat.whatsapp.com/">
-Join WhatsApp Group
+<a href="https://chat.whatsapp.com/YOUR-LINK-HERE" class="btn">
+Join WhatsApp Community
 </a>
+
+</header>
+
+<section>
+
+<h2 class="section-title">About DRC</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Who We Are</h3>
+<p>
+Dogra Run Club Vijaypur is a community of runners, walkers,
+students, professionals and fitness enthusiasts.
+</p>
+</div>
+
+<div class="card">
+<h3>Our Mission</h3>
+<p>
+Promote fitness, discipline, friendship and healthy living
+through regular community runs.
+</p>
+</div>
+
+<div class="card">
+<h3>Everyone Welcome</h3>
+<p>
+Beginner, intermediate or experienced runner — everyone is
+welcome in DRC.
+</p>
+</div>
+
+</div>
 
 </section>
 
-<section class="section">
+<section>
+
+<h2 class="section-title">Weekly Community Run</h2>
+
+<div class="cards">
 
 <div class="card">
-<h2>About DRC</h2>
-<br>
+<h3>Sunday Run</h3>
 <p>
-Dogra Run Club is Vijaypur's community running club.
-We welcome beginners, walkers, runners, students,
-working professionals, mothers and fitness enthusiasts.
+📅 Every Sunday<br><br>
+⏰ 6:00 AM<br><br>
+📍 Vijaypur, Jammu
 </p>
 </div>
 
 <div class="card">
-<h2>Weekly Community Run</h2>
-<br>
-<p>
-Every Sunday • 6:00 AM
-</p>
-<br>
-<p>
-Meeting Point: Fitzone Gym, Vijaypur
-</p>
-</div>
-
-<div class="card">
-<h2>Why Join?</h2>
-<br>
+<h3>Benefits</h3>
 <p>
 ✔ Improve Fitness<br><br>
 ✔ Build Discipline<br><br>
 ✔ Meet Positive People<br><br>
-✔ Stay Consistent<br><br>
-✔ Run Safely Together
+✔ Stay Consistent
 </p>
 </div>
 
-<div class="card">
-<h2>Registration</h2>
-<br>
-<p>
-Interested in joining Dogra Run Club?
-Click below and join our WhatsApp community.
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Community Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5">
+<img src="https://images.unsplash.com/photo-1486218119243-13883505764c">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Join Dogra Run Club</h2>
+
+<div class="card" style="text-align:center">
+
+<p style="font-size:20px;margin-bottom:20px;">
+Become part of Vijaypur's growing running community.
 </p>
-<br>
-<a class="btn" href="https://chat.whatsapp.com/">
+
+<a href="https://chat.whatsapp.com/YOUR-LINK-HERE" class="btn">
 Register Now
 </a>
+
 </div>
 
 </section>
 
 <footer>
+
+<h3>Dogra Run Club Vijaypur</h3>
+
+<p style="margin:15px 0;">
+Run Together. Stronger Together.
+</p>
+
+<div class="social">
+<a href="#">Instagram</a>
+<a href="#">WhatsApp</a>
+<a href="#">Facebook</a>
+</div>
+
+<p style="margin-top:20px;">
 © 2026 Dogra Run Club Vijaypur
+</p>
+
 </footer>
 
 </body>
